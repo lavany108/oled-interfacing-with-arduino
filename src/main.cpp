@@ -17,11 +17,23 @@ void setup() {
     display.setTextSize(1);
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(0,0);
-    display.print("Arduino Uno R4");
-    display.print("OLED with I2C");
+    display.println("Arduino Uno R4");
+    display.println("OLED with I2C");
     display.print("Hello World");
     display.display();
 }
+
+/**
+ * @file main.cpp
+ * @brief Example Arduino sketch that initializes an SSD1306 OLED over I2C and prints text.
+ *
+ * This sketch demonstrates basic initialization of the Adafruit_SSD1306 library
+ * and prints a few lines to the display. It also opens a Serial connection for
+ * debug messages.
+ *
+ * @author lavany108
+ * @date 2026-02-11
+ */
 
 void loop() {
 // write your code here
